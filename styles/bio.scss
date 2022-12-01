@@ -4,13 +4,18 @@
 @use './partials/global' as *;
 @use './partials/typography';
 
+
 .header {
-    display: flex;
     background-color: $bandsite-black;
-    justify-content: center;
+
+    &__title-container {
+        display: flex;
+        justify-content: center;
+        max-height: 12vh;
+    }
 
     &__title {
-        font-size: 6rem;
+        font-size: 6.0rem;
         font-family: "AvenirNext";
         font-weight: 400;
     }
@@ -21,7 +26,33 @@
     }
 }
 
+.nav {
+    display: flex;
+    background-color: $bandsite-black;
 
+    &__list {
+        display: flex;
+        font-family: "AvenirNext";
+        list-style-type: none;
+        font-size: 2.4rem;
+        width: 100%;
+        justify-content: space-evenly;
+        margin: 0;
+        padding: 2.4rem;
+    }
+
+    &__link {
+        color: $white;
+        text-decoration: none;
+    }
+
+    &__link--current {
+        color: $white;
+        border-bottom: 0.5rem solid $white;
+        text-decoration: none;
+        padding-bottom: 2.0rem;
+    }
+}
 
 
 
