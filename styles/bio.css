@@ -53,6 +53,7 @@ body {
 .nav {
   display: flex;
   background-color: #323232;
+  margin-top: 0.5rem;
 }
 .nav__list {
   display: flex;
@@ -64,13 +65,13 @@ body {
   margin: 0;
   padding: 2.4rem;
 }
-.nav__link {
-  color: #ffffff;
-  text-decoration: none;
-}
-.nav__link--current {
+.nav__list--current {
   color: #ffffff;
   border-bottom: 0.5rem solid #ffffff;
   text-decoration: none;
   padding-bottom: 2rem;
+}
+.nav__link {
+  color: #ffffff;
+  text-decoration: none;
 }/*# sourceMappingURL=bio.css.map */

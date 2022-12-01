@@ -29,6 +29,7 @@
 .nav {
     display: flex;
     background-color: $bandsite-black;
+    margin-top: 0.5rem;
 
     &__list {
         display: flex;
@@ -41,16 +42,16 @@
         padding: 2.4rem;
     }
 
-    &__link {
-        color: $white;
-        text-decoration: none;
-    }
-
-    &__link--current {
+    &__list--current {
         color: $white;
         border-bottom: 0.5rem solid $white;
         text-decoration: none;
         padding-bottom: 2.0rem;
+    }
+
+    &__link {
+        color: $white;
+        text-decoration: none;
     }
 }
 
