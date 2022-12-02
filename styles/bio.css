@@ -96,10 +96,10 @@ body {
 .musicians {
   display: flex;
   flex-direction: column;
+  font-family: "AvenirNext";
 }
 .musicians__title {
   font-size: 2.4rem;
-  font-family: "AvenirNext";
   font-weight: 600;
   padding-left: 1.6rem;
 }
@@ -107,4 +107,25 @@ body {
   width: 100%;
   margin: auto;
   padding: 0 1.6rem;
+}
+.musicians-text__quote {
+  width: 100%;
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 2.2rem;
+  padding: 1.6rem 1.6rem 0 1.6rem;
+}
+
+.description {
+  width: 100%;
+  font-family: "AvenirNext";
+  padding: 1.6rem;
+}
+.description__title {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.description__text {
+  font-size: 1.3rem;
 }/*# sourceMappingURL=bio.css.map */

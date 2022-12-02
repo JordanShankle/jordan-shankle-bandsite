@@ -86,10 +86,10 @@
 .musicians {
     display: flex;
     flex-direction: column;
+    font-family: "AvenirNext";
 
     &__title {
         font-size: 2.4rem;
-        font-family: "AvenirNext";
         font-weight: 600;
         padding-left: 1.6rem;
     }
@@ -99,10 +99,34 @@
         margin: auto;
         padding: 0 1.6rem;
     }
+
+    &-text__quote {
+        width: 100%;
+        margin: 0;
+        font-size: 1.4rem;
+        font-weight: 600;
+        line-height: 2.2rem;
+        padding: 1.6rem 1.6rem 0 1.6rem;
+    }
 }
 
 
+// The Bees Knees Description
+.description {
+    width: 100%;
+    font-family: 'AvenirNext';
+    padding: 1.6rem;
 
+
+    &__title {
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
+    
+    &__text {
+        font-size: 1.3rem;
+    }
+}
 
 
 
