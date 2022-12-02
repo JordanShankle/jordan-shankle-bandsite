@@ -5,6 +5,7 @@
 @use './partials/typography';
 
 
+// Header
 .header {
     background-color: $bandsite-black;
 
@@ -26,25 +27,29 @@
     }
 }
 
+
+// Nav Bar
 .nav {
     display: flex;
     background-color: $bandsite-black;
     margin-top: 0.5rem;
 
-    &__list {
+    &__item {
         display: flex;
         font-family: "AvenirNext";
         font-size: 2.4rem;
+        font-weight: 400;
         width: 100%;
         justify-content: space-evenly;
         padding: 2.4rem;
     }
 
-    &__list--current {
+    &__item--current {
         color: $white;
-        border-bottom: 0.5rem solid $white;
+        border-bottom: 0.7rem solid $white;
         text-decoration: none;
         padding-bottom: 2.0rem;
+        font-weight: 600;
     }
 
     &__link {
@@ -52,6 +57,44 @@
         color: $white;
     }
 }
+
+
+// Hero Section
+.hero {
+    background-image: url(../assets/Images/hero-bio.jpg);
+    display: flex;
+    background-size: cover;
+    height: 60vh;
+    
+    
+    &__title {
+    display: flex;
+    align-items: center;
+    color: $white;
+    font-size: 6.0rem;
+    font-family: "AvenirNext";
+    font-weight: 600;
+    padding-left: 1.6rem;
+    }
+}
+
+
+// About Musicians
+.musicians {
+    display: flex;
+    
+    &__title {
+        font-size: 6.0rem;
+        font-family: "AvenirNext";
+        font-weight: 600;
+        padding-left: 1.6rem;
+    }
+}
+
+
+
+
+
 
 
 

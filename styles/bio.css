@@ -55,21 +55,49 @@ body {
   background-color: #323232;
   margin-top: 0.5rem;
 }
-.nav__list {
+.nav__item {
   display: flex;
   font-family: "AvenirNext";
   font-size: 2.4rem;
+  font-weight: 400;
   width: 100%;
   justify-content: space-evenly;
   padding: 2.4rem;
 }
-.nav__list--current {
+.nav__item--current {
   color: #ffffff;
-  border-bottom: 0.5rem solid #ffffff;
+  border-bottom: 0.7rem solid #ffffff;
   text-decoration: none;
   padding-bottom: 2rem;
+  font-weight: 600;
 }
 .nav__link {
   text-decoration: none;
   color: #ffffff;
+}
+
+.hero {
+  background-image: url(../assets/Images/hero-bio.jpg);
+  display: flex;
+  background-size: cover;
+  height: 60vh;
+}
+.hero__title {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  font-size: 6rem;
+  font-family: "AvenirNext";
+  font-weight: 600;
+  padding-left: 1.6rem;
+}
+
+.musicians {
+  display: flex;
+}
+.musicians__title {
+  font-size: 6rem;
+  font-family: "AvenirNext";
+  font-weight: 600;
+  padding-left: 1.6rem;
 }/*# sourceMappingURL=bio.css.map */
