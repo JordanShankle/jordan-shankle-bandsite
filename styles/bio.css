@@ -34,16 +34,16 @@ body {
 }
 .header {
   background-color: #323232;
+  width: 100%;
 }
 .header__title-container {
   display: flex;
   justify-content: center;
-  max-height: 12vh;
 }
 .header__title {
-  font-size: 6rem;
+  font-size: 2.4rem;
   font-family: "AvenirNext";
-  font-weight: 400;
+  font-weight: 600;
 }
 .header__logo {
   text-decoration: none;
@@ -53,21 +53,20 @@ body {
 .nav {
   display: flex;
   background-color: #323232;
-  margin-top: 0.5rem;
+  width: 100%;
+  justify-content: center;
 }
 .nav__item {
   display: flex;
   font-family: "AvenirNext";
-  font-size: 2.4rem;
+  font-size: 1.4rem;
   font-weight: 400;
-  width: 100%;
-  justify-content: space-evenly;
-  padding: 2.4rem;
+  width: 50%;
+  justify-content: center;
 }
 .nav__item--current {
   color: #ffffff;
   border-bottom: 0.7rem solid #ffffff;
-  text-decoration: none;
   padding-bottom: 2rem;
   font-weight: 600;
 }
@@ -79,25 +78,33 @@ body {
 .hero {
   background-image: url(../assets/Images/hero-bio.jpg);
   display: flex;
-  background-size: cover;
-  height: 60vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-height: 70vw;
 }
 .hero__title {
   display: flex;
   align-items: center;
   color: #ffffff;
-  font-size: 6rem;
+  font-size: 2.4rem;
   font-family: "AvenirNext";
   font-weight: 600;
   padding-left: 1.6rem;
+  margin: 0;
 }
 
 .musicians {
   display: flex;
+  flex-direction: column;
 }
 .musicians__title {
-  font-size: 6rem;
+  font-size: 2.4rem;
   font-family: "AvenirNext";
   font-weight: 600;
   padding-left: 1.6rem;
+}
+.musicians__image {
+  width: 100%;
+  margin: auto;
+  padding: 0 1.6rem;
 }/*# sourceMappingURL=bio.css.map */
