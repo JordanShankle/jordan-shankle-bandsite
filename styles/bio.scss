@@ -13,7 +13,6 @@
     &__title-container {
         display: flex;
         justify-content: center;
-        // max-height: 12vh;
     }
 
     &__title {
@@ -48,7 +47,7 @@
 
     &__item--current {
         color: $white;
-        border-bottom: 0.7rem solid $white;
+        border-bottom: 0.4rem solid $white;
         padding-bottom: 2.0rem;
         font-weight: 600;
     }
@@ -156,3 +155,61 @@
 }
 
 
+// Footer
+.footer {
+    background-color: $bandsite-black;
+    color: $white;
+    font-family: 'AvenirNext';
+    font-size: 1.3rem;
+    font-weight: 400;
+
+    &_title {
+        font-size: 2.4rem;
+        font-weight: 600;
+        margin: 0;
+        padding: 2.4rem 0 1.6rem 1.6rem;
+        width: 100%;
+    }
+
+    &-icon {
+        margin: 0;
+        
+        &__item {
+            padding: 1.6rem;
+        }
+    }
+    
+    &-logo {
+        margin-top: 4rem;
+        padding-left: 1.6rem;
+    }
+
+    &-copyright {
+        margin: 0%;
+        padding: 1.6rem;
+    }
+
+
+    &-contact {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 2.4rem 0 0 1.6rem;
+
+        &__header {
+            font-weight: 600;
+            line-height: 1.8rem;
+            margin: 0;
+
+        }
+
+        
+        &__copy {
+            margin: 0%;
+            
+            &-container {
+                margin-top: 1.6rem;
+            }
+        }
+    }
+}

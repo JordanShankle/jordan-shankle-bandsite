@@ -66,7 +66,7 @@ body {
 }
 .nav__item--current {
   color: #ffffff;
-  border-bottom: 0.7rem solid #ffffff;
+  border-bottom: 0.4rem solid #ffffff;
   padding-bottom: 2rem;
   font-weight: 600;
 }
@@ -149,4 +149,50 @@ body {
 .photo-gallery-container__image {
   width: 96vw;
   padding-bottom: 1.6rem;
+}
+
+.footer {
+  background-color: #323232;
+  color: #ffffff;
+  font-family: "AvenirNext";
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+.footer_title {
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin: 0;
+  padding: 2.4rem 0 1.6rem 1.6rem;
+  width: 100%;
+}
+.footer-icon {
+  margin: 0;
+}
+.footer-icon__item {
+  padding: 1.6rem;
+}
+.footer-logo {
+  margin-top: 4rem;
+  padding-left: 1.6rem;
+}
+.footer-copyright {
+  margin: 0%;
+  padding: 1.6rem;
+}
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 2.4rem 0 0 1.6rem;
+}
+.footer-contact__header {
+  font-weight: 600;
+  line-height: 1.8rem;
+  margin: 0;
+}
+.footer-contact__copy {
+  margin: 0%;
+}
+.footer-contact__copy-container {
+  margin-top: 1.6rem;
 }/*# sourceMappingURL=bio.css.map */
