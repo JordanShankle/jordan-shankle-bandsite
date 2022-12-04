@@ -128,4 +128,25 @@ body {
 }
 .description__text {
   font-size: 1.3rem;
+}
+
+.photo-gallery {
+  background-color: #fafafa;
+}
+.photo-gallery__title {
+  font-family: "AvenirNext";
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin: 0;
+  align-items: flex-start;
+  padding: 2.4rem 0 1.6rem 1.6rem;
+}
+.photo-gallery-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.photo-gallery-container__image {
+  width: 96vw;
+  padding-bottom: 1.6rem;
 }/*# sourceMappingURL=bio.css.map */
