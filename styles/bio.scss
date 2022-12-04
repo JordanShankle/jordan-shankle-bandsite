@@ -9,6 +9,10 @@
 .header {
     background-color: $bandsite-black;
     width: 100%;
+    
+    @include tablet {
+        display: flex;
+    }
 
     &__title-container {
         display: flex;
@@ -19,6 +23,14 @@
         font-size: 2.4rem;
         font-family: "AvenirNext";
         font-weight: 600;
+
+        @include tablet {
+            font-size: 3.6rem;
+            font-family: "AvenirNext";
+            font-weight: 400;
+            display: flex;
+            padding-left: 3.6rem;
+        }
     }
 
     &__logo {
@@ -35,6 +47,9 @@
     width: 100%;
     justify-content: center;
 
+    @include tablet {
+        width: 40%;
+    }
 
     &__item {
         display: flex;
@@ -43,6 +58,24 @@
         font-weight: 400;
         width: 50%;
         justify-content: center;
+
+        @include tablet {
+            display: flex;
+            align-items: center;
+            width: 35%;
+            font-size: 1.6rem;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $white;
+
+        @include tablet {
+            padding-left: 1.5rem;
+            text-decoration: none;
+        }
+
     }
 
     &__item--current {
@@ -50,11 +83,13 @@
         border-bottom: 0.4rem solid $white;
         padding-bottom: 2.0rem;
         font-weight: 600;
-    }
 
-    &__link {
-        text-decoration: none;
-        color: $white;
+        @include tablet {
+            padding: 0;
+            border-bottom: none;
+            text-decoration: underline solid $white 0.5rem;
+            text-underline-offset: 3.6rem;
+        }
     }
 }
 
@@ -67,7 +102,8 @@
     background-repeat: no-repeat;
     min-height: 70vw;
     position: relative;
-    
+
+
     &__layer {
         display: flex;
         background-color: rgba(32, 32, 32, 0.5);
@@ -87,6 +123,11 @@
     font-weight: 600;
     padding-left: 1.6rem;
     margin: 0;
+        
+        @include tablet {
+            font-size: 6.0rem;
+            padding-left: 3.6rem;
+        }
     }
 }
 

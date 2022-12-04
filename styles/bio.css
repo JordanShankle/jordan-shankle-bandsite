@@ -36,6 +36,11 @@ body {
   background-color: #323232;
   width: 100%;
 }
+@media screen and (min-width: 768px) {
+  .header {
+    display: flex;
+  }
+}
 .header__title-container {
   display: flex;
   justify-content: center;
@@ -44,6 +49,15 @@ body {
   font-size: 2.4rem;
   font-family: "AvenirNext";
   font-weight: 600;
+}
+@media screen and (min-width: 768px) {
+  .header__title {
+    font-size: 3.6rem;
+    font-family: "AvenirNext";
+    font-weight: 400;
+    display: flex;
+    padding-left: 3.6rem;
+  }
 }
 .header__logo {
   text-decoration: none;
@@ -56,6 +70,11 @@ body {
   width: 100%;
   justify-content: center;
 }
+@media screen and (min-width: 768px) {
+  .nav {
+    width: 40%;
+  }
+}
 .nav__item {
   display: flex;
   font-family: "AvenirNext";
@@ -64,15 +83,38 @@ body {
   width: 50%;
   justify-content: center;
 }
+@media screen and (min-width: 768px) {
+  .nav__item {
+    display: flex;
+    align-items: center;
+    width: 35%;
+    font-size: 1.6rem;
+  }
+}
+.nav__link {
+  text-decoration: none;
+  color: #ffffff;
+}
+@media screen and (min-width: 768px) {
+  .nav__link {
+    padding-left: 1.5rem;
+    text-decoration: none;
+  }
+}
 .nav__item--current {
   color: #ffffff;
   border-bottom: 0.4rem solid #ffffff;
   padding-bottom: 2rem;
   font-weight: 600;
 }
-.nav__link {
-  text-decoration: none;
-  color: #ffffff;
+@media screen and (min-width: 768px) {
+  .nav__item--current {
+    padding: 0;
+    border-bottom: none;
+    -webkit-text-decoration: underline solid #ffffff 0.5rem;
+            text-decoration: underline solid #ffffff 0.5rem;
+    text-underline-offset: 3.6rem;
+  }
 }
 
 .hero {
@@ -101,6 +143,12 @@ body {
   font-weight: 600;
   padding-left: 1.6rem;
   margin: 0;
+}
+@media screen and (min-width: 768px) {
+  .hero__title {
+    font-size: 6rem;
+    padding-left: 3.6rem;
+  }
 }
 
 .musicians {
