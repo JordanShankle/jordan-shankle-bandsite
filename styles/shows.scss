@@ -5,5 +5,49 @@
 @use '../styles/partials/typography';
 
 
+// Hero Section
+.hero {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(32, 32, 32, 0.5),
+        rgba(32, 32, 32, 0.5)), 
+        url("../assets/images/hero-shows.jpg");
+    display: flex;
+    background-size: contain;
+    background-repeat: no-repeat;
 
+    
+
+    &__title {
+    display: flex;
+    align-items: center;
+    color: $white;
+    font-size: 2.4rem;
+    font-family: "AvenirNext";
+    font-weight: 600;
+    padding-left: 1.6rem;
+    margin: 0;
+        
+        @include tablet {
+            font-size: 6.0rem;
+            padding-left: 3.6rem;
+        }
+
+        @include desktop {
+            font-size: 6.0rem;
+            padding-left: 8.0rem;
+        }
+    }
+
+    &__copy {
+        display: flex;
+        align-items: center;
+        color: $white;
+        font-size: 2.4rem;
+        font-family: "AvenirNext";
+        font-weight: 600;
+        padding-left: 1.6rem;
+        margin: 0;
+    }
+}
 
