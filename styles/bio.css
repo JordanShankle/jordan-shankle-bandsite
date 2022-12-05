@@ -126,98 +126,125 @@ body {
   }
 }
 
-.header {
+.footer {
   background-color: #323232;
+  color: #ffffff;
+  font-family: "AvenirNext";
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    font-size: 1.4rem;
+    padding-top: 3.6rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    font-size: 1.4rem;
+    padding-left: 5rem;
+  }
+}
+.footer_title {
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin: 0;
+  padding: 2.4rem 0 1.6rem 1.6rem;
   width: 100%;
 }
 @media screen and (min-width: 768px) {
-  .header {
-    display: flex;
-  }
-}
-.header__title-container {
-  display: flex;
-  justify-content: center;
-}
-.header__title {
-  font-size: 2.4rem;
-  font-family: "AvenirNext";
-  font-weight: 600;
-}
-@media screen and (min-width: 768px) {
-  .header__title {
+  .footer_title {
     font-size: 3.6rem;
-    font-weight: 400;
-    display: flex;
+    width: 40%;
     padding-left: 3.6rem;
   }
 }
-@media screen and (min-width: 1280px) {
-  .header__title {
-    padding-left: 8rem;
-  }
-}
-.header__logo {
-  text-decoration: none;
-  color: #ffffff;
-}
-
-.nav {
-  display: flex;
-  background-color: #323232;
-  width: 100%;
-  justify-content: center;
+.footer-icon {
+  margin: 0;
 }
 @media screen and (min-width: 768px) {
-  .nav {
-    width: 40%;
+  .footer-icon {
+    position: relative;
+    bottom: 4.6rem;
+    left: 26rem;
   }
 }
-@media screen and (min-width: 1280px) {
-  .nav {
-    width: 25%;
-  }
-}
-.nav__item {
-  display: flex;
-  font-family: "AvenirNext";
-  font-size: 1.4rem;
-  font-weight: 400;
-  width: 50%;
-  justify-content: center;
+.footer-icon__item {
+  padding: 1.6rem;
 }
 @media screen and (min-width: 768px) {
-  .nav__item {
+  .footer-logo-container {
     display: flex;
-    align-items: center;
-    width: 35%;
-    font-size: 1.6rem;
+    justify-content: flex-end;
+    padding-right: 3.6rem;
+    position: relative;
+    bottom: 23rem;
   }
 }
-.nav__link {
-  text-decoration: none;
-  color: #ffffff;
+.footer-logo {
+  margin-top: 4rem;
+  padding-left: 1.6rem;
 }
 @media screen and (min-width: 768px) {
-  .nav__link {
-    padding-left: 1.5rem;
-    text-decoration: none;
+  .footer-logo {
+    margin-top: 0%;
   }
 }
-.nav__item--current {
-  color: #ffffff;
-  border-bottom: 0.4rem solid #ffffff;
-  padding-bottom: 2rem;
+@media screen and (min-width: 1280px) {
+  .footer-logo {
+    margin-top: 0%;
+    padding-right: 8rem;
+  }
+}
+.footer-copyright {
+  margin: 0%;
+  padding: 1.6rem;
+}
+@media screen and (min-width: 768px) {
+  .footer-copyright {
+    padding: 0 0 3.6rem 3.6rem;
+  }
+}
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 2.4rem 0 0 1.6rem;
+}
+@media screen and (min-width: 768px) {
+  .footer-contact {
+    padding: 0 6rem 2.4rem 3rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer-contact {
+    padding: 0 3rem 2.4rem 3rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer-contact-info {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0.6rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer-contact-info {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 0.6rem;
+  }
+}
+.footer-contact__header {
   font-weight: 600;
+  line-height: 1.8rem;
+  margin: 0;
 }
-@media screen and (min-width: 768px) {
-  .nav__item--current {
-    padding: 0;
-    border-bottom: none;
-    -webkit-text-decoration: underline solid #ffffff 0.5rem;
-            text-decoration: underline solid #ffffff 0.5rem;
-    text-underline-offset: 3.6rem;
-  }
+.footer-contact__copy {
+  margin: 0%;
+}
+.footer-contact__copy-container {
+  margin-top: 1.6rem;
 }
 
 .hero {
@@ -455,125 +482,4 @@ body {
     height: 250px;
     padding: 1.6rem;
   }
-}
-
-.footer {
-  background-color: #323232;
-  color: #ffffff;
-  font-family: "AvenirNext";
-  font-size: 1.3rem;
-  font-weight: 400;
-}
-@media screen and (min-width: 768px) {
-  .footer {
-    font-size: 1.4rem;
-    padding-top: 3.6rem;
-  }
-}
-@media screen and (min-width: 768px) {
-  .footer {
-    font-size: 1.4rem;
-    padding-left: 5rem;
-  }
-}
-.footer_title {
-  font-size: 2.4rem;
-  font-weight: 600;
-  margin: 0;
-  padding: 2.4rem 0 1.6rem 1.6rem;
-  width: 100%;
-}
-@media screen and (min-width: 768px) {
-  .footer_title {
-    font-size: 3.6rem;
-    width: 40%;
-    padding-left: 3.6rem;
-  }
-}
-.footer-icon {
-  margin: 0;
-}
-@media screen and (min-width: 768px) {
-  .footer-icon {
-    position: relative;
-    bottom: 4.6rem;
-    left: 26rem;
-  }
-}
-.footer-icon__item {
-  padding: 1.6rem;
-}
-@media screen and (min-width: 768px) {
-  .footer-logo-container {
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 3.6rem;
-    position: relative;
-    bottom: 23rem;
-  }
-}
-.footer-logo {
-  margin-top: 4rem;
-  padding-left: 1.6rem;
-}
-@media screen and (min-width: 768px) {
-  .footer-logo {
-    margin-top: 0%;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .footer-logo {
-    margin-top: 0%;
-    padding-right: 8rem;
-  }
-}
-.footer-copyright {
-  margin: 0%;
-  padding: 1.6rem;
-}
-@media screen and (min-width: 768px) {
-  .footer-copyright {
-    padding: 0 0 3.6rem 3.6rem;
-  }
-}
-.footer-contact {
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  padding: 2.4rem 0 0 1.6rem;
-}
-@media screen and (min-width: 768px) {
-  .footer-contact {
-    padding: 0 6rem 2.4rem 3rem;
-  }
-}
-@media screen and (min-width: 768px) {
-  .footer-contact {
-    padding: 0 3rem 2.4rem 3rem;
-  }
-}
-@media screen and (min-width: 768px) {
-  .footer-contact-info {
-    display: flex;
-    justify-content: space-between;
-    padding-left: 0.6rem;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .footer-contact-info {
-    display: flex;
-    justify-content: flex-start;
-    padding-left: 0.6rem;
-  }
-}
-.footer-contact__header {
-  font-weight: 600;
-  line-height: 1.8rem;
-  margin: 0;
-}
-.footer-contact__copy {
-  margin: 0%;
-}
-.footer-contact__copy-container {
-  margin-top: 1.6rem;
 }/*# sourceMappingURL=bio.css.map */
