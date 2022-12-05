@@ -1,5 +1,41 @@
 // Partials
-@use './partials/variables' as *;
-@use './partials/mixins' as *;
-@use './partials/global' as *;
-@use './partials/typography';
+@use '../styles/partials/variables' as *;
+@use '../styles/partials/mixins' as *;
+@use '../styles/partials/global' as *;
+@use '../styles/partials/typography';
+
+// .header {
+//     background-color: $bandsite-black;
+//     width: 100%;
+    
+//     @include tablet {
+//         display: flex;
+//     }
+
+//     &__title-container {
+//         display: flex;
+//         justify-content: center;
+//     }
+
+//     &__title {
+//         font-size: 2.4rem;
+//         font-family: "AvenirNext";
+//         font-weight: 600;
+
+//         @include tablet {
+//             font-size: 3.6rem;
+//             font-weight: 400;
+//             display: flex;
+//             padding-left: 3.6rem;
+//         }
+
+//         @include desktop {
+//             padding-left: 8.0rem;
+//         }
+//     }
+
+//     &__logo {
+//         text-decoration: none;
+//         color: $white;
+//     }
+// }

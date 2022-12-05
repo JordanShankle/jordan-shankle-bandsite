@@ -1,3 +1,9 @@
+// Partials
+@use '../partials/variables' as *;
+@use '../partials/mixins' as *;
+@use '../partials/typography';
+
+
 // Resets
 *,
 *::before,
@@ -15,5 +21,96 @@ body {
     padding: 0;
 }
 
+// Header 
+.header {
+    background-color: $bandsite-black;
+    width: 100%;
+    
+    @include tablet {
+        display: flex;
+    }
 
+    &__title-container {
+        display: flex;
+        justify-content: center;
+    }
 
+    &__title {
+        font-size: 2.4rem;
+        font-family: "AvenirNext";
+        font-weight: 600;
+
+        @include tablet {
+            font-size: 3.6rem;
+            font-weight: 400;
+            display: flex;
+            padding-left: 3.6rem;
+        }
+
+        @include desktop {
+            padding-left: 8.0rem;
+        }
+    }
+
+    &__logo {
+        text-decoration: none;
+        color: $white;
+    }
+}
+
+// Nav Bar
+.nav {
+    display: flex;
+    background-color: $bandsite-black;
+    width: 100%;
+    justify-content: center;
+
+    @include tablet {
+        width: 40%;
+    }
+
+    @include desktop {
+        width: 25%;
+    }
+
+    &__item {
+        display: flex;
+        font-family: "AvenirNext";
+        font-size: 1.4rem;
+        font-weight: 400;
+        width: 50%;
+        justify-content: center;
+
+        @include tablet {
+            display: flex;
+            align-items: center;
+            width: 35%;
+            font-size: 1.6rem;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $white;
+
+        @include tablet {
+            padding-left: 1.5rem;
+            text-decoration: none;
+        }
+
+    }
+
+    &__item--current {
+        color: $white;
+        border-bottom: 0.4rem solid $white;
+        padding-bottom: 2.0rem;
+        font-weight: 600;
+
+        @include tablet {
+            padding: 0;
+            border-bottom: none;
+            text-decoration: underline solid $white 0.5rem;
+            text-underline-offset: 3.6rem;
+        }
+    }
+}
