@@ -161,10 +161,27 @@ body {
   font-weight: 600;
   padding-left: 1.6rem;
 }
+@media screen and (min-width: 768px) {
+  .musicians__title {
+    font-size: 3.6rem;
+    padding-left: 3.6rem;
+  }
+}
 .musicians__image {
   width: 100%;
   margin: auto;
   padding: 0 1.6rem;
+}
+@media screen and (min-width: 768px) {
+  .musicians__image {
+    width: 80%;
+    padding-left: 0 3.6rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .musicians-text-container {
+    height: 15rem;
+  }
 }
 .musicians-text__quote {
   width: 100%;
@@ -173,6 +190,29 @@ body {
   font-weight: 600;
   line-height: 2.2rem;
   padding: 1.6rem 1.6rem 0 1.6rem;
+}
+@media screen and (min-width: 768px) {
+  .musicians-text__quote {
+    width: 80%;
+    margin: auto;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+  }
+}
+.musicians-text__author {
+  width: 100%;
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 2.2rem;
+  padding: 1.6rem 1.6rem 0 1.6rem;
+}
+@media screen and (min-width: 768px) {
+  .musicians-text__author {
+    width: 80%;
+    margin: auto;
+    font-size: 1.6rem;
+  }
 }
 
 .description {
@@ -184,8 +224,34 @@ body {
   font-size: 1.4rem;
   font-weight: 600;
 }
+@media screen and (min-width: 768px) {
+  .description__title {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 2.4rem;
+    padding-bottom: 1.6rem;
+    padding-top: 3.6rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .description__text-container {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    padding-bottom: 1.6rem;
+  }
+}
 .description__text {
   font-size: 1.3rem;
+}
+@media screen and (min-width: 768px) {
+  .description__text {
+    display: flex;
+    margin: auto;
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    padding-right: 3.6rem;
+  }
 }
 
 .photo-gallery {
@@ -199,14 +265,36 @@ body {
   align-items: flex-start;
   padding: 2.4rem 0 1.6rem 1.6rem;
 }
+@media screen and (min-width: 768px) {
+  .photo-gallery__title {
+    font-size: 3.6rem;
+    padding: 2.4rem 0 1.6rem 3.6rem;
+  }
+}
 .photo-gallery-container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+@media screen and (min-width: 768px) {
+  .photo-gallery-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 2.6rem;
+    margin: auto;
+    width: 95%;
+  }
+}
 .photo-gallery-container__image {
-  width: 96vw;
   padding-bottom: 1.6rem;
+  width: 96vw;
+}
+@media screen and (min-width: 768px) {
+  .photo-gallery-container__image {
+    width: 300px;
+    height: 200px;
+    padding: 1.6rem;
+  }
 }
 
 .footer {

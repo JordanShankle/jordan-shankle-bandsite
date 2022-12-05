@@ -142,12 +142,28 @@
         font-size: 2.4rem;
         font-weight: 600;
         padding-left: 1.6rem;
+
+        @include tablet {
+            font-size: 3.6rem;
+            padding-left: 3.6rem;
+        }
     }
 
     &__image {
         width: 100%;
         margin: auto;
         padding: 0 1.6rem;
+
+        @include tablet {
+            width: 80%;
+            padding-left: 0 3.6rem;
+        }
+    }
+
+    &-text-container {
+        @include tablet {
+            height: 15rem;
+        }
     }
 
     &-text__quote {
@@ -157,6 +173,29 @@
         font-weight: 600;
         line-height: 2.2rem;
         padding: 1.6rem 1.6rem 0 1.6rem;
+
+
+        @include tablet {
+            width: 80%;
+            margin: auto;
+            font-size: 2.4rem;
+            line-height: 3.2rem;
+        }
+    }
+
+    &-text__author {
+        width: 100%;
+        margin: 0;
+        font-size: 1.4rem;
+        font-weight: 600;
+        line-height: 2.2rem;
+        padding: 1.6rem 1.6rem 0 1.6rem;
+
+        @include tablet {
+            width: 80%;
+            margin: auto;
+            font-size: 1.6rem;
+        }
     }
 }
 
@@ -171,10 +210,35 @@
     &__title {
         font-size: 1.4rem;
         font-weight: 600;
+
+        @include tablet {
+            width: 80%;
+            margin: 0 auto;
+            font-size: 2.4rem;
+            padding-bottom: 1.6rem;
+            padding-top: 3.6rem;
+        }
+    }
+    
+    &__text-container {
+        @include tablet {
+            display: flex;
+            width: 80%;
+            margin: auto;
+            padding-bottom: 1.6rem;
+        }
     }
     
     &__text {
         font-size: 1.3rem;
+
+        @include tablet {
+            display: flex;
+            margin: auto;
+            font-size: 1.4rem;
+            line-height: 2.2rem;
+            padding-right: 3.6rem;
+        }
     }
 }
 
@@ -190,18 +254,36 @@
         margin: 0;
         align-items: flex-start;
         padding: 2.4rem 0 1.6rem 1.6rem;
+
+        @include tablet {
+            font-size: 3.6rem;
+            padding: 2.4rem 0 1.6rem 3.6rem;
+        }
     }
 
     &-container {
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        @include tablet {
+            flex-direction: row;
+            flex-wrap: wrap;
+            padding-bottom: 2.6rem;
+            margin: auto;
+            width: 95%;
+        }
     }
     
     &-container__image {
-        width: 96vw;
         padding-bottom: 1.6rem;
+        width: 96vw;
 
+        @include tablet {
+            width: 300px;
+            height: 200px;
+            padding: 1.6rem;
+        }
     }
 }
 
