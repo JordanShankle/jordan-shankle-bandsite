@@ -285,7 +285,6 @@ body {
 .musicians {
   display: flex;
   flex-direction: column;
-  font-family: "AvenirNext";
 }
 .musicians__title {
   font-size: 2.4rem;
@@ -316,20 +315,13 @@ body {
 }
 @media screen and (min-width: 1280px) {
   .musicians__image {
-    width: 75%;
     padding-left: 0 3.6rem;
   }
 }
-@media screen and (min-width: 768px) {
-  .musicians-text-container {
-    height: 15rem;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .musicians-text-container {
-    margin: auto;
-    width: 93%;
-  }
+.musicians-text-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1.6rem;
 }
 .musicians-text__quote {
   width: 100%;
@@ -337,7 +329,7 @@ body {
   font-size: 1.4rem;
   font-weight: 600;
   line-height: 2.2rem;
-  padding: 1.6rem 1.6rem 0 1.6rem;
+  padding: 0 1.6rem 0 1.6rem;
 }
 @media screen and (min-width: 768px) {
   .musicians-text__quote {
@@ -365,7 +357,6 @@ body {
 
 .description {
   width: 100%;
-  font-family: "AvenirNext";
   padding: 1.6rem;
 }
 .description__title {
@@ -383,25 +374,13 @@ body {
 }
 @media screen and (min-width: 1280px) {
   .description__title {
-    width: 75%;
-    margin: 0 auto;
-    font-size: 2.4rem;
     padding-bottom: 1.6rem;
-    padding-top: 0;
   }
 }
 @media screen and (min-width: 768px) {
   .description__text-container {
     display: flex;
     width: 80%;
-    margin: auto;
-    padding-bottom: 1.6rem;
-  }
-}
-@media screen and (min-width: 768px) {
-  .description__text-container {
-    display: flex;
-    width: 75%;
     margin: auto;
     padding-bottom: 1.6rem;
   }
@@ -415,7 +394,9 @@ body {
     margin: auto;
     font-size: 1.4rem;
     line-height: 2.2rem;
-    padding-right: 3.6rem;
+  }
+  .description__text--right {
+    padding-left: 3.6rem;
   }
 }
 
@@ -423,7 +404,6 @@ body {
   background-color: #fafafa;
 }
 .photo-gallery__title {
-  font-family: "AvenirNext";
   font-size: 2.4rem;
   font-weight: 600;
   margin: 0;
@@ -433,12 +413,12 @@ body {
 @media screen and (min-width: 768px) {
   .photo-gallery__title {
     font-size: 3.6rem;
-    padding: 2.4rem 0 1.6rem 3.6rem;
+    padding: 4.8rem 0 1.6rem 3.6rem;
   }
 }
 @media screen and (min-width: 1280px) {
   .photo-gallery__title {
-    padding-left: 8rem;
+    padding: 4.8rem 0 1.6rem 8rem;
   }
 }
 .photo-gallery-container {
@@ -462,12 +442,12 @@ body {
 }
 .photo-gallery-container__image {
   padding-bottom: 1.6rem;
-  width: 96vw;
+  width: 90%;
 }
 @media screen and (min-width: 768px) {
   .photo-gallery-container__image {
-    width: 300px;
-    height: 200px;
+    width: 250px;
+    height: 175px;
     padding: 1.6rem;
   }
 }
@@ -475,6 +455,5 @@ body {
   .photo-gallery-container__image {
     width: 380px;
     height: 250px;
-    padding: 1.6rem;
   }
 }/*# sourceMappingURL=bio.css.map */
