@@ -1,18 +1,18 @@
 @font-face {
   font-family: "AvenirNext";
-  src: url(../../assets/Font/AvenirNextLTPro-Regular.otf) format(opentype);
+  src: url(../../assets/fonts/AvenirNextLTPro-Regular.otf) format(opentype);
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "AvenirNext";
-  src: url(../../assets/Font/AvenirNextLTPro-Demi.otf) format(opentype);
+  src: url(../../assets/fonts/AvenirNextLTPro-Demi.otf) format(opentype);
   font-weight: 600;
   font-style: normal;
 }
 @font-face {
   font-family: "AvenirNext";
-  src: url(../../assets/Font/AvenirNextLTPro-Bold.otf) format(opentype);
+  src: url(../../assets/fonts/AvenirNextLTPro-Bold.otf) format(opentype);
   font-weight: 700;
   font-style: bold;
 }
@@ -24,6 +24,7 @@
 
 html {
   font-size: 62.5%;
+  font-family: "AvenirNext";
 }
 
 body {
@@ -124,6 +125,19 @@ body {
             text-decoration: underline solid #ffffff 0.5rem;
     text-underline-offset: 3.6rem;
   }
+}
+
+.hero {
+  display: flex;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.hero__title {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  font-size: 2.4rem;
+  margin: 0;
 }
 
 .footer {
@@ -249,18 +263,11 @@ body {
 
 .hero {
   background-image: linear-gradient(to bottom, rgba(32, 32, 32, 0.5), rgba(32, 32, 32, 0.5)), url("../assets/images/hero-shows.jpg");
-  display: flex;
-  background-size: contain;
-  background-repeat: no-repeat;
+  height: 85vw;
 }
 .hero__title {
-  display: flex;
-  align-items: center;
-  color: #ffffff;
-  font-size: 2.4rem;
-  font-family: "AvenirNext";
-  font-weight: 600;
-  padding-left: 1.6rem;
+  font-weight: 400;
+  padding: 3.6rem 0 2.4rem 1.6rem;
   margin: 0;
 }
 @media screen and (min-width: 768px) {
@@ -271,7 +278,6 @@ body {
 }
 @media screen and (min-width: 1280px) {
   .hero__title {
-    font-size: 6rem;
     padding-left: 8rem;
   }
 }
@@ -279,9 +285,9 @@ body {
   display: flex;
   align-items: center;
   color: #ffffff;
-  font-size: 2.4rem;
-  font-family: "AvenirNext";
+  font-size: 3.6rem;
   font-weight: 600;
   padding-left: 1.6rem;
   margin: 0;
+  width: 80%;
 }/*# sourceMappingURL=shows.css.map */

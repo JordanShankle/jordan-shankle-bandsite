@@ -13,6 +13,7 @@
 
 html {
     font-size: 62.5%;
+    font-family: "AvenirNext";
 }
 
 body {
@@ -119,6 +120,23 @@ body {
     }
 }
 
+
+// Hero
+.hero {
+    display: flex;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &__title {
+        display: flex;
+        align-items: center;
+        color: $white;
+        font-size: 2.4rem;
+        margin: 0;
+    }
+
+    
+}
 
 
 // Footer
