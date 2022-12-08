@@ -182,7 +182,7 @@
         font-weight: 600;
         margin: 0;
         align-items: flex-start;
-        padding: 2.4rem 0 1.6rem 1.6rem;
+        padding: 2.4rem 0 0rem 1.6rem;
 
         @include tablet {
             font-size: 3.6rem;
@@ -213,18 +213,16 @@
     }
     
     &-container__image {
-        padding-bottom: 1.6rem;
-        width: 90%;
+        padding: 1.6rem;
+        width: 100%;
 
         @include tablet {
-            width: 250px;
-            height: 175px;
+            width: 33%;
             padding: 1.6rem;
         }
 
-        @include desktop {
-            width: 380px;
-            height: 250px;
-        }
+        // @include desktop {
+        //     padding: 2.4rem;
+        // }
     }
 }
