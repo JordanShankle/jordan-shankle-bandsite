@@ -564,7 +564,7 @@ label {
   border-radius: 0.4rem;
   margin-bottom: 1.6rem;
 }
-.comment__button__button:hover {
+.comment__button:hover {
   background-color: #000000;
 }
 @media screen and (min-width: 768px) {
