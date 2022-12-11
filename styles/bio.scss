@@ -227,6 +227,8 @@
     }
 }
 
+
+
 // Join the Convo & Comment Section
 // .conversation-container {
 //     margin: 1.6rem;
@@ -239,13 +241,14 @@
 }
 
 
+// Form
 .form {
     display: flex;
-    flex-direction: column;
-    width: 80%;
     margin: 1.6rem;
+    color: $silver;
 
-    &-container {
+
+    &__image-container {
         display: flex;
     }
 
@@ -256,10 +259,17 @@
         height: 3.6rem;
         object-fit: cover;
         display: flex;
+        margin: 2.5rem 1.6rem;
     }
 
-
+    &__input {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2rem;
+        width: 100%;
+    }
 }
+
 
 label {
     display: flex;
@@ -267,20 +277,30 @@ label {
     margin-bottom: 2rem;
 }
 
+
 .add-name {
-    border-color: $mercury;
+    border: 1px solid $mercury;
     background-color: $alabaster;
-    padding: 1.4rem;
+    color: $bandsite-dark-black;
+    padding: 1.2rem;
+    border-radius: 0.4rem;
+    margin-top: 0.4rem;
 }
+
 
 .add-comment {
     background-color: $alabaster;
     color: $bandsite-dark-black;
-    border-color: $mercury;
-
+    border: 1px solid $mercury;
+    resize: none;
+    height: 10rem;
+    border-radius: 0.4rem;
+    padding: 1.2rem;
+    margin-top: 0.4rem;
 }
 
 
+// Comments
 .comment {
     width: 100%;
     border-top: 0.1rem solid $mercury;

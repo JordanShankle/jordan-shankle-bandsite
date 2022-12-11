@@ -484,11 +484,10 @@ body {
 
 .form {
   display: flex;
-  flex-direction: column;
-  width: 80%;
   margin: 1.6rem;
+  color: #afafaf;
 }
-.form-container {
+.form__image-container {
   display: flex;
 }
 .form__image {
@@ -498,6 +497,13 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   display: flex;
+  margin: 2.5rem 1.6rem;
+}
+.form__input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  width: 100%;
 }
 
 label {
@@ -507,15 +513,23 @@ label {
 }
 
 .add-name {
-  border-color: #e1e1e1;
+  border: 1px solid #e1e1e1;
   background-color: #fafafa;
-  padding: 1.4rem;
+  color: #000000;
+  padding: 1.2rem;
+  border-radius: 0.4rem;
+  margin-top: 0.4rem;
 }
 
 .add-comment {
   background-color: #fafafa;
   color: #000000;
-  border-color: #e1e1e1;
+  border: 1px solid #e1e1e1;
+  resize: none;
+  height: 10rem;
+  border-radius: 0.4rem;
+  padding: 1.2rem;
+  margin-top: 0.4rem;
 }
 
 .comment {
