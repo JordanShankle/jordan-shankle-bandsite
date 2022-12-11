@@ -51,6 +51,11 @@
     &__title {
         margin: 0%;
         padding: 1.6rem;
+        font-weight: 600;
+
+        @include tablet {
+            font-size: 3.6rem;
+        }
     }
 
 
@@ -61,7 +66,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 2.4rem 1.8rem;
+            margin-left: 1.6rem;
             width: 65%;
         }
     }
@@ -86,6 +91,9 @@
 
         &__heading {
             color: $silver;
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin: 0;
 
             @include tablet {
                 display: none;
