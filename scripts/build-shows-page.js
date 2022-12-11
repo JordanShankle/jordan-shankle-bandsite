@@ -1,4 +1,4 @@
-console.log("Hi, Jordan. You got it!");
+console.log("Hi, Jordan. You got this!");
 
 // Create an Array of Objects with our Shows data.
 const showsArray = [
@@ -46,28 +46,28 @@ const displayShows = (show) => {
     
     
     // Create a p tag for the VENUE heading
-    const showsVenueHeading = document.createElement("p");
+    const showsVenueHeading = document.createElement("h6");
     showsVenueHeading.classList.add("shows__ticket__heading");
     showsVenueHeading.innerText = "VENUE";
     showsTicket.appendChild(showsVenueHeading);
     
     // Create a p tag for the venue info
     const showsVenue = document.createElement("p");
-    showsVenue.classList.add("shows__ticket__text");
+    // showsVenue.classList.add("shows__ticket__text");
     showsVenue.innerText = show.venue;
     showsTicket.appendChild(showsVenue);
     
     
     
     // Create a p tag for the LOCATION heading
-    const showsLocationHeading = document.createElement("p");
+    const showsLocationHeading = document.createElement("h6");
     showsLocationHeading.classList.add("shows__ticket__heading");
     showsLocationHeading.innerText = "LOCATION";
     showsTicket.appendChild(showsLocationHeading);
     
     // Create a p tag for the location info
     const showsLocation = document.createElement("p");
-    showsLocation.classList.add("shows__ticket__text");
+    // showsLocation.classList.add("shows__ticket__text");
     showsLocation.innerText = show.location;
     showsTicket.appendChild(showsLocation);
 
@@ -87,6 +87,8 @@ const displayShows = (show) => {
 for (let i = 0; i < showsArray.length; i++) {
     displayShows(showsArray[i]);
 };
+
+
 
 // Helper Funtion to Create an Element with a Class
 // function createElementWithClass(tag, className) {

@@ -545,16 +545,30 @@ label {
     align-content: center;
   }
 }
+.comment-container {
+  border: 0.1rem solid #e1e1e1;
+  display: flex;
+}
 .comment__card {
   display: flex;
-  flex-direction: row;
-  margin-top: 2rem;
+  flex-direction: column;
+  margin: 1.6rem;
 }
 .comment__card__pic {
   background-color: #e1e1e1;
   width: 3.6rem;
   height: 3.6rem;
   border-radius: 50%;
+  margin: 1.6rem;
+}
+.comment__text-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.comment__name {
+  font-size: 1.6rem;
+  font-weight: 600;
 }
 .comment__button {
   background-color: #323232;

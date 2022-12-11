@@ -313,18 +313,41 @@ label {
         align-content: center;
     }
 
+    &-container {
+        border: 0.1rem solid $mercury;
+        display: flex;
+    }
+    
     &__card {
         display: flex;
-        flex-direction: row;
-        margin-top: 2rem;
+        flex-direction: column;
+        margin: 1.6rem;
 
         &__pic {
             background-color: $mercury;
             width: 3.6rem;
             height: 3.6rem;
             border-radius: 50%;
+            margin: 1.6rem;
         }
     }
+
+    &__text-container {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    
+    &__name {
+        font-size: 1.6rem;
+        font-weight: 600;
+    }
+
+    // &__date {
+    //     display: flex;
+    // }
+
+
 
     &__button {
         background-color: $bandsite-black;
@@ -344,7 +367,6 @@ label {
         }
     }
 }
-
 
 
 
