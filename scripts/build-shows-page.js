@@ -12,23 +12,32 @@ const showsArray = [
 
 
 // Select the parent element (section with shows class)
-const showsListElement = document.querySelector(".shows");
-
+const showsListElement = document.querySelector(".shows__tickets__wrapper");
 
 // Create a h2 tag for the Shows Title & add class to it.
-const showsTitle = document.createElement("h2");
-showsTitle.classList.add("shows__title");
-showsTitle.innerText = "Shows";
+// const showsTitle = document.createElement("h2");
+// showsTitle.classList.add("shows__title");
+// showsTitle.innerText = "Shows";
 
 // Append Shows Title to Shows container
-showsListElement.prepend(showsTitle);
+// showsListElement.prepend(showsTitle);
+
 
 
 const displayShows = (show) => {
+
+    // Create a wrapper for the Shows Tickets
+    // const showsTicketsWrapper = document.createElement("section");
+    // showsTicketsWrapper.classList.add("shows__tickets__wrapper");
+    
+    // Appends Shows Wrapper to Shows Container
+    // showsListElement.appendChild(showsTicketsWrapper); 
+    
     
     // Create a div container for all the info with a class of shows__ticket
     const showsTicket = document.createElement("div");
     showsTicket.classList.add("shows__ticket");
+    // showsTicketsWrapper.appendChild(showsTicket);
     
     
     // Create a p tag for the DATE heading
@@ -78,7 +87,11 @@ const displayShows = (show) => {
 
     
     // Append Shows Ticket to Shows Container
-    showsListElement.appendChild(showsTicket);    
+    showsListElement.appendChild(showsTicket);
+
+   
+
+
 };
 
 
