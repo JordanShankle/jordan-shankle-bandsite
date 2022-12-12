@@ -159,6 +159,11 @@ body {
   }
 }
 @media screen and (min-width: 768px) {
+  .footer__logo {
+    padding-top: 1rem;
+  }
+}
+@media screen and (min-width: 768px) {
   .footer-section {
     display: flex;
     width: 90%;
@@ -176,7 +181,7 @@ body {
   font-size: 2.4rem;
   font-weight: 600;
   margin: 0;
-  padding: 2.4rem 0 1.6rem 1.6rem;
+  padding: 2.4rem 0 0 1.6rem;
 }
 @media screen and (min-width: 768px) {
   .footer_title {
@@ -516,7 +521,7 @@ body {
 
 .form {
   display: flex;
-  margin: 1.6rem 1.6rem 0 1.6rem;
+  margin: 1.6rem 1.6rem 0 0;
   color: #afafaf;
   border-bottom: 0.2rem solid #e1e1e1;
 }
@@ -528,7 +533,7 @@ body {
 }
 @media screen and (min-width: 1280px) {
   .form {
-    width: 75rem;
+    width: 60rem;
     margin: auto;
   }
 }
@@ -543,6 +548,13 @@ body {
      object-fit: cover;
   display: flex;
   margin: 2.5rem 1.6rem;
+}
+@media screen and (min-width: 768px) {
+  .form__image {
+    width: 4.8rem;
+    height: 4.8rem;
+    margin: 1.8rem 1.6rem;
+  }
 }
 .form__input {
   display: flex;
@@ -601,7 +613,7 @@ label {
 }
 @media screen and (min-width: 1280px) {
   .comment-section {
-    width: 75rem;
+    width: 60rem;
     margin: auto;
     margin-bottom: 3.6rem;
   }
@@ -621,7 +633,14 @@ label {
   width: 3.6rem;
   height: 3.6rem;
   border-radius: 50%;
-  margin: 1.6rem;
+  margin: 1.6rem 0 1.6rem 1.6rem;
+}
+@media screen and (min-width: 768px) {
+  .comment__card__pic {
+    width: 4.8rem;
+    height: 4.8rem;
+    margin: 1.6rem 0.6rem;
+  }
 }
 .comment__text-container {
   display: flex;
@@ -640,6 +659,18 @@ label {
 .comment__date {
   margin: 0;
   color: #afafaf;
+}
+@media screen and (min-width: 768px) {
+  .comment__button-container {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .comment__button-container {
+    display: flex;
+    justify-content: flex-end;
+  }
 }
 .comment__button {
   background-color: #323232;

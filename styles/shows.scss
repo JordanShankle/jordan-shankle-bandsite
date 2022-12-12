@@ -23,7 +23,6 @@
 
     @include desktop {
         flex-direction: row;
-        // justify-content: center;
         align-items: center;
         height: 50vw;
     }
@@ -104,13 +103,13 @@
         }
 
         &-desktop {
-            margin-top: 6.6rem;
+
+            @include desktop {
+                margin-top: 6.6rem;
+            }
         }
     }
 }
-
-
-
 
 
 // Shows Section
@@ -120,7 +119,6 @@
     @include desktop {
         display: flex;
         justify-content: space-around;
-        // flex-direction: column;
     }
 
     &__tickets__wrapper {
@@ -206,16 +204,23 @@
         }
 
         @include tablet {
-            padding: 1.6rem 3.6rem 1.6rem 3.6rem;
+            padding: 1.6rem 3.6rem 1.6rem 2.1rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            width: 97%;
+            margin: auto;
         }
         
+        @include desktop {
+            padding: 1.6rem 3.6rem 1.6rem 3.6rem;
+            width: 100%;
+            margin: 0;
+        }
 
         &__heading {
             color: $silver;
-            font-size: 1.3rem;
+            font-size: 1.2rem;
             font-weight: 600;
             margin: 0;
 
@@ -236,7 +241,6 @@
             height: 4rem;
             width: 100%;
             border-radius: 0.4rem;
-            // margin-bottom: 1.6rem;
 
             &:hover {
                 background-color: $bandsite-dark-black;

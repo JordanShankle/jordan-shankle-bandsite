@@ -159,6 +159,11 @@ body {
   }
 }
 @media screen and (min-width: 768px) {
+  .footer__logo {
+    padding-top: 1rem;
+  }
+}
+@media screen and (min-width: 768px) {
   .footer-section {
     display: flex;
     width: 90%;
@@ -176,7 +181,7 @@ body {
   font-size: 2.4rem;
   font-weight: 600;
   margin: 0;
-  padding: 2.4rem 0 1.6rem 1.6rem;
+  padding: 2.4rem 0 0 1.6rem;
 }
 @media screen and (min-width: 768px) {
   .footer_title {
@@ -399,8 +404,10 @@ body {
     display: none;
   }
 }
-.hero__sound-cloud-desktop {
-  margin-top: 6.6rem;
+@media screen and (min-width: 1280px) {
+  .hero__sound-cloud-desktop {
+    margin-top: 6.6rem;
+  }
 }
 
 .shows {
@@ -491,15 +498,24 @@ body {
 }
 @media screen and (min-width: 768px) {
   .shows__ticket {
-    padding: 1.6rem 3.6rem 1.6rem 3.6rem;
+    padding: 1.6rem 3.6rem 1.6rem 2.1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 97%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .shows__ticket {
+    padding: 1.6rem 3.6rem 1.6rem 3.6rem;
+    width: 100%;
+    margin: 0;
   }
 }
 .shows__ticket__heading {
   color: #afafaf;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 600;
   margin: 0;
 }
