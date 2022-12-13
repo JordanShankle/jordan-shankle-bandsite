@@ -541,11 +541,12 @@ body {
   display: flex;
 }
 .form__image {
+  background-image: url(../assets/images/Mohan-muruge.jpg);
+  background-size: cover;
+  background-position: left;
   border-radius: 50%;
   width: 3.6rem;
   height: 3.6rem;
-  -o-object-fit: cover;
-     object-fit: cover;
   display: flex;
   margin: 2.5rem 1.6rem;
 }
