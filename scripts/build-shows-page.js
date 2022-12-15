@@ -80,13 +80,38 @@ for (let i = 0; i < showsArray.length; i++) {
 
 
 
+// Selected Card 
+// const selectedTicket = document.querySelector(".shows__tickets__wrapper")
+// console.log(selectedTicket)
+
+// let previouslySelected = undefined;
+
+// const selected = (event) => {
+//     if () 
+// }
 
 
 
 
+// let activeCard;
 
+// const setActiveCard = (cardToSet) => {
+//   if (activeCard) {
+//     activeCard.classList.remove("highlighted-card");
+//   }
+//   cardToSet.classList.add("highlighted-card");
+//   activeCard = cardToSet;
+// };
 
-
+// const displayShow = (showObj) => {
+//   let showsCard = document.createElement("div");
+//   showsCard.classList.add("shows__card");
+//   showsContainer.appendChild(showsCard);
+// // ...
+// // ...
+// // ...
+//   showsCard.onclick = () => setActiveCard(showsCard);
+// };
 
 
 
