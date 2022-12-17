@@ -1,11 +1,3 @@
-// Create an Array of Objects with our Shows data.
-// const commentsArray = [
-//     { name: "Connor Walton", text: "This is art. This is inexplicable magic expressed in the purest way, everything that makes up this majestic work deserves reverence. Let us appreciate this for what it is and what it contains.", date: "02/17/2021" },
-//     { name: "Emilie Beach", text: "I feel blessed to have seen them in person. What a show! They were just perfection. If there was one day of my life I could relive, this would be it. What an incredible day.", date: "01/09/2021"},
-//     { name: "Miles Acosta", text: "I can't stop listening. Every time I hear one of their songs - the vocals - it gives me goosebumps. Shivers straight down my spine. What a beautiful expression of creativity. Can't get enough.", date: "12/20/2021"}
-// ];
-
-
 // Base URL
 const BASE_API_URL = "https://project-1-api.herokuapp.com/";
 
@@ -36,18 +28,17 @@ function getRequest() {
             
     // Redeclare our comments array to store the data of our API request
     comments = result.data;
-
+    
+    // sort comments by newest
     comments.sort((a, b) => {
        return b.timestamp - a.timestamp
     })
-            
-    console.log(result);
             
     // Loop thru our data & add each iteration to our Array –– comments
     for (let i = 0; i < comments.length; i++) {
         displayComments(comments[i]);
         }
-    })
+    }) // Catch any errors in the request
     .catch((error) => {
         console.error(`You have an ${error}`);
     });

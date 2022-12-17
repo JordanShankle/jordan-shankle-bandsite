@@ -1,12 +1,46 @@
-// Create an Array of Objects with our Shows data.
-const showsArray = [
-    { date: "Mon Sept 06 2021", venue: "Ronald Lane", location: "San Francisco, CA" }, // (1)
-    { date: "Tue Sept 21 2021", venue: "Pier 3 East", location: "San Francisco, CA" }, // (2)
-    { date: "Fri Oct 15 2021", venue: "View Lounge", location: "San Francisco, CA" }, // (3)
-    { date: "Sat Nov 06 2021", venue: "Hyatt Agency", location: "San Francisco, CA" }, // (4)
-    { date: "Fri Nov 26 2021", venue: "Moscow Center", location: "San Francisco, CA" }, // (5)
-    { date: "Wed Dec 15 2021", venue: "Press Club", location: "San Francisco, CA" }, // (6)
-];
+// Base URL
+const BASE_API_URL = "https://project-1-api.herokuapp.com/";
+
+// API Key
+const API_KEY = "42326e44-760b-48b9-8a5f-bdcbd5aa2d84";
+
+// Query
+const query = "showdates";
+
+// URL
+const url = `${BASE_API_URL}${query}?api_key=${API_KEY}`;
+
+console.log(url);
+
+// Create an Array for the Comments
+let shows = [];
+
+
+// Make a GET request function
+function getRequest() {
+    axios
+    // Go to the URL & get the Data
+    .get(url)
+    
+    // Store the data in a our Array –– comments
+    .then((result) => {
+        
+        console.log(result)
+
+    // Redeclare our comments array to store the data of our API request
+    shows = result.data;
+            
+    // Loop thru our data & add each iteration to our Array –– comments
+    for (let i = 0; i < shows.length; i++) {
+        displayShows(shows[i]);
+        }
+    }) // Catch any errors in the request
+    .catch((error) => {
+        console.error(`You have an ${error}`);
+    });
+}
+
+
 
 
 // Select the parent element (section with shows class)
@@ -30,7 +64,7 @@ const displayShows = (show) => {
     // Create a p tag for the date info
     const showsDate = document.createElement("p");
     showsDate.classList.add("shows__ticket__text");
-    showsDate.innerText = show.date;
+    showsDate.innerText = new Date(show.date).toDateString("en-us");
     showsTicket.appendChild(showsDate);
     
     
@@ -43,8 +77,7 @@ const displayShows = (show) => {
     
     // Create a p tag for the venue info
     const showsVenue = document.createElement("p");
-    // showsVenue.classList.add("shows__ticket__text");
-    showsVenue.innerText = show.venue;
+    showsVenue.innerText = show.place;
     showsTicket.appendChild(showsVenue);
     
     
@@ -57,7 +90,6 @@ const displayShows = (show) => {
     
     // Create a p tag for the location info
     const showsLocation = document.createElement("p");
-    // showsLocation.classList.add("shows__ticket__text");
     showsLocation.innerText = show.location;
     showsTicket.appendChild(showsLocation);
 
@@ -72,11 +104,11 @@ const displayShows = (show) => {
 };
 
 
-
+getRequest();
 // Loop over the Shows Array
-for (let i = 0; i < showsArray.length; i++) {
-    displayShows(showsArray[i]);
-};
+// for (let i = 0; i < shows.length; i++) {
+//     displayShows(shows[i]);
+// };
 
 
 
