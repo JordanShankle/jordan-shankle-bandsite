@@ -54,7 +54,6 @@ const displayShows = (show) => {
     const showsTicket = document.createElement("div");
     showsTicket.classList.add("shows__ticket");
     
-    
     // Create a p tag for the DATE heading
     const showsDateHeading = document.createElement("h6");
     showsDateHeading.classList.add("shows__ticket__heading");
@@ -66,7 +65,6 @@ const displayShows = (show) => {
     showsDate.classList.add("shows__ticket__text");
     showsDate.innerText = new Date(show.date).toDateString("en-us");
     showsTicket.appendChild(showsDate);
-    
     
     
     // Create a p tag for the VENUE heading
@@ -105,6 +103,49 @@ const displayShows = (show) => {
 
 
 getRequest();
+
+
+
+let ticketBackground = () => {
+    const selectedTicket = document.querySelectorAll(".shows__ticket")
+
+    let previouslySelected = undefined;
+
+    const handler = (event) => {
+        if ("shows__ticket__button" === event.target.className) return;
+
+        if (previouslySelected) {
+            previouslySelected.style.backgroundColor = "white";
+        }
+
+        let currentlySelected = event.currentTarget;
+        currentlySelected.style.backgroundColor = "rgb(225, 225, 225)";
+
+        previouslySelected = currentlySelected;
+    };
+
+
+        selectedTicket.forEach((element) => {
+        element.addEventListener("click", handler);
+    });
+}
+    
+setTimeout(ticketBackground, 2000);
+
+
+
+
+// const setActiveCard = (cardToSet) => {
+//   if (activeCard) {
+//     activeCard.classList.remove("highlighted-card");
+//   }
+//   cardToSet.classList.add("highlighted-card");
+//   activeCard = cardToSet;
+// };
+
+
+
+
 // Loop over the Shows Array
 // for (let i = 0; i < shows.length; i++) {
 //     displayShows(shows[i]);
@@ -127,13 +168,6 @@ getRequest();
 
 // let activeCard;
 
-// const setActiveCard = (cardToSet) => {
-//   if (activeCard) {
-//     activeCard.classList.remove("highlighted-card");
-//   }
-//   cardToSet.classList.add("highlighted-card");
-//   activeCard = cardToSet;
-// };
 
 // const displayShow = (showObj) => {
 //   let showsCard = document.createElement("div");
