@@ -120,12 +120,6 @@ const displayComments = (comment) => {
 
 
 
-// Loop over the Comments Array
-// for (let i = 0; i < comments.length; i++) {
-//     displayComments(comments[i]);
-// };
-
-
 // Call the GET request function
 getRequest();
 
@@ -136,7 +130,6 @@ const form = document.querySelector(".form");
 // Create Event Listener
 form.addEventListener('submit', (event) => {
     event.preventDefault();
-    // let date = new Date().toLocaleDateString("en-US");
     
     // Create a new Object for our Array
     const newComment = {
@@ -147,13 +140,6 @@ form.addEventListener('submit', (event) => {
     
     // Reset the values
     form.reset();
-    // event.target.name.value = "";
-    // event.target.comment.value = "";
-
-
-    // Add new comment to the top of the Array
-    // displayComments(comments);
-    // displayComments();
     
     
     axios
